@@ -1,0 +1,66 @@
+.list__contact{
+  background: #609;
+  padding: 20px;
+  display: block;
+  overflow: hidden;
+  .list__contact--image{
+    float: left;
+    padding: 0 30px 0 0;
+    @media (max-width: $screen-md-max) {
+      float: none;
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+      img{
+        display: block;
+        margin: 0 auto 10px auto;
+      }
+    }
+  }
+  .list__contact--box{
+    padding: 0 30px;
+    color: #fff;
+    float: left;
+    @media (max-width: $screen-md-max) {
+      float: none;
+      display: block;
+      padding: 10px;
+      text-align: center;
+    }
+    &.first{
+      border-left:1px solid #ba67ac;
+      border-right:1px solid #ba67ac;
+      @media (max-width: $screen-md-max) {
+        border: none;
+        border-top:1px solid #ba67ac;
+        border-bottom:1px solid #ba67ac;
+      }
+    }
+    h4{
+      font-family: "XXIICentarMedium", sans-serif;
+      font-size: 24px;
+      font-weight: normal;
+      font-style: normal;
+      margin: 0;
+      padding: 0;
+    }
+    p{
+      font-size: 24px;
+      font-style: normal;
+      font-weight: normal;
+      font-family: "XXIICentarThin", sans-serif;
+      margin: 0;
+      padding:5px;
+      a{
+        color: #fff;
+        text-decoration: none;
+      }
+      span{
+        color: #ff6600;
+      }
+      @media (max-width: $screen-xs-max) {
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.three__cols{
+  position: relative;
+  .violet__line{
+    position: absolute;
+    background: #40205f;
+    background: rgba(64, 32, 95, .75);
+    background-blend-mode: multiply;
+    padding: 20px 0;
+    height: 200px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    @media (max-width: $screen-md-min) {
+      display: none;
+      visibility: hidden;
+      height: 0;
+    }
+  }
+  .ball__next{
+    background: url("../assets/oval.png") center center no-repeat;
+    width: 303px;
+    height: 317px;
+    margin:10px auto;
+    padding-top: 53px;
+    @media (max-width:330px) {
+      margin: 10px 0 10px -23px;
+    }
+    p{
+      font-family: "XXIICentarMedium", sans-serif;
+      font-size: 28px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+  .text__next{
+    font-family: "XXIICentarRegular", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    padding: 64px 0 0 0;
+    @media (max-width: $screen-md-max) {
+      font-size: 19px;
+      padding: 75px 0 0 0;
+    }
+    @media (max-width: $screen-md-min) {
+      color: #609;
+      text-align: center;
+      padding: 10px 0 0 0;
+    }
+  }
+}

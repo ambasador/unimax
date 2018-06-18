@@ -1,0 +1,41 @@
+.box__header{
+  display: block;
+  color: #fff;
+  font-family: "XXIICentarMedium", sans-serif;
+  font-size: 24px;
+  @media (max-width: $screen-md-max) {
+    font-size: 18px;
+  }
+  &.first{
+    background:#609 url("../assets/card.png") 20px 40px no-repeat;
+    padding: 40px 0 40px 100px;
+    @media (max-width: $screen-md-min) {
+      margin-bottom: 20px;
+      background:#609 none;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+  &.second{
+    background:#609 url("../assets/insurance.png") 20px 40px no-repeat;
+    padding: 40px 0 40px 100px;
+    line-height: 65px;
+    @media (max-width: $screen-md-min) {
+      margin-bottom: 20px;
+      background:#609 none;
+      text-align: center;
+      padding: 10px 0;
+      line-height: normal;
+    }
+  }
+  &.last{
+    background:#609 url("../assets/saving.png") 20px 40px no-repeat;
+    padding: 40px 0 40px 100px;
+    @media (max-width: $screen-md-min) {
+      margin-bottom: 20px;
+      background:#609 none;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+}
